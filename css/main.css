@@ -1,8 +1,8 @@
 /*HEADER CSS*/
 body{
-  padding-top:52px;
+  /*padding-top:52px;*/
 }
-.glass{
+/*.glass{
 
   border-bottom: 1px solid;
   border-bottom-color: #ccc;
@@ -10,9 +10,9 @@ body{
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
-}
+}*/
 #headerrr{
-  background-color:rgba(34, 34, 34, .95);
+  background-color:transparent
 }
 
 /*
@@ -169,3 +169,25 @@ font-size: 15px
   }
 }
 /*END HEADER*/
+
+/*Index.html*/
+section{
+  zoom:1;
+  overflow:hidden;
+}
+.top{
+  background-image:url('/assets/shattered-island.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  height:650px;
+  width:100%;
+  color:white;
+  padding-left:3em;
+}
+.top > h1{
+  padding-top: 6em;
+}
+.top > h4{
+  font-weight:300;
+}
