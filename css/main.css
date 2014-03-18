@@ -170,6 +170,18 @@ font-size: 15px
 }
 /*END HEADER*/
 
+/*global*/
+.btn{
+  font-weight:300;
+}
+footer{
+  zoom:1;
+  overflow:hidden;
+  height:100px;
+  text-align:center;
+}
+/*end global*/
+
 /*Index.html*/
 section{
   zoom:1;
@@ -190,4 +202,11 @@ section{
 }
 .top > h4{
   font-weight:300;
+  max-width: 65%;
+}
+.action-buttons{
+  padding-top:3em;
+}
+.action-buttons > button{
+  margin:.5em;
 }
