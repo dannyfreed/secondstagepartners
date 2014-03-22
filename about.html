@@ -9,17 +9,20 @@ title: About Us - Second Stage Partners
 
 <section class="bios">
 	<div class="row">
-		<div class="bio-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		<div id="world" class="bio-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
 			</figure>
 		</div>
 		<div class="bio-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
 			</figure>
 		</div>
 		<div class="bio-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
 			</figure>
@@ -27,11 +30,13 @@ title: About Us - Second Stage Partners
 	</div>
 	<div class="row">
 		<div class="bio-holder col-xs-12 col-sm-6 col-md-6 col-lg-6">
+		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
 			</figure>
 		</div>
 		<div class="bio-holder col-xs-12 col-sm-6 col-md-6 col-lg-6">
+		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
 			</figure>
@@ -40,15 +45,16 @@ title: About Us - Second Stage Partners
 </section>
 
 <script>
-
-$('.bio-holder').click(function(){
-    $(this).css("height","500px");
-    $(this).addClass("clicked");
-});
-</script>
-<script>
-$('.clicked').click(function(){
-    $(this).css("height","600px");
-    $(this).removeClass("clicked");
-});
+$(".expand").clicktoggle(function(){
+     $(this).parent().animate({height:500},200);
+     $(this).html('-');
+ },function(){
+     $(this).parent().animate({height:322},200);
+     $(this).html('+');
+ });
+  /*$(".bio-holder").click(function(){
+    $(this).animate({height:500},200);
+  	$(this).addClass("clicked");
+  });
+});*/
 </script>
