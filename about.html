@@ -10,46 +10,61 @@ title: About Us - Second Stage Partners
 <section class="bios">
 	<div class="row">
 		<div id="world" class="bio-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
-		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
+				<figcaption>
+					<h3>Danny Freed</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</figure>
+			<button class="expand" value="open">+</button>
 		</div>
 		<div class="bio-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
-		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
+				<figcaption>
+					<h3>Danny Freed</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</figure>
+			<button class="expand" value="open">+</button>
 		</div>
 		<div class="bio-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
-		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
+				<figcaption>
+					<h3>Danny Freed</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</figure>
+			<button class="expand" value="open">+</button>
 		</div>
 	</div>
 	<div class="row">
 		<div class="bio-holder col-xs-12 col-sm-6 col-md-6 col-lg-6">
-		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
+				<figcaption>
+					<h3>Danny Freed</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</figure>
+			<button class="expand" value="open">+</button>
 		</div>
 		<div class="bio-holder col-xs-12 col-sm-6 col-md-6 col-lg-6">
-		<button class="expand" value="open">+</button>
 			<figure>
 				<img src="http://gadole.com/assets/freed.jpg" class="bio-pic">
+				<figcaption>
+					<h3>Danny Freed</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</figure>
+			<button class="expand" value="open">+</button>
 		</div>
 	</div>
 </section>
 
 <script>
 $(".expand").clicktoggle(function(){
-     $(this).parent().animate({height:500},200);
+     $(this).parent().addClass('clicked', 200);//animate({height:500},200);
      $(this).html('-');
  },function(){
-     $(this).parent().animate({height:322},200);
+     $(this).parent().removeClass('clicked');//.animate({height:325},200);
      $(this).html('+');
  });
   /*$(".bio-holder").click(function(){

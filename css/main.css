@@ -245,7 +245,9 @@ height: 70px;
   border:1px solid black;
   zoom:1;
   overflow:hidden;
-  text-align:center;;
+  text-align:center;
+  height:auto;
+  max-height:700px;
 }
 .bio-pic{
   max-width:300px;
@@ -253,5 +255,7 @@ height: 70px;
   margin-right:auto;
 }
 .clicked{
-  height:500px;
+  height:1000px !important;
+  -webkit-animation-duration:0.7s;-moz-animation-duration:0.7s;-ms-animation-duration:0.7s;-o-animation-duration:0.7s;animation-duration:0.7s;
+
 }
