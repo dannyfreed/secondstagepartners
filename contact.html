@@ -4,24 +4,29 @@ title: Contact Us - Second Stage Partners
 ---
 <section style="padding-top:55px;" class="top-contact">
     <div id="contact_form">
-        <form name="contact" action="">
-          <fieldset>
-            <label for="name" id="name_label">Name</label>
-            <input type="text" name="name" id="name" size="30" value="" class="text-input" />
-            <label class="error" for="name" id="name_error">This field is required.</label>
-             
-            <label for="email" id="email_label">Return Email</label>
-            <input type="text" name="email" id="email" size="30" value="" class="text-input" />
-            <label class="error" for="email" id="email_error">This field is required.</label>
-             
-            <label for="phone" id="phone_label">Return Phone</label>
-            <input type="text" name="phone" id="phone" size="30" value="" class="text-input" />
-            <label class="error" for="phone" id="phone_error">This field is required.</label>
-             
-              <br />
-            <input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
-          </fieldset>
-        </form>
+         <form id="contactMe" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" method="post" action="#">
+          <div class="element text">
+            <label class="tk-proxima-nova">Name*</label>
+            <span>
+              <input class="tk-proxima-nova text-field" id="name" name="name" placeholder="Your Name" required type="text" />
+            </span>
+          </div>  
+           <div class="element text">
+            <label for="email" class="tk-proxima-nova">Email*</label>
+            <span>
+              <input id="email" class="tk-proxima-nova text-field" name="email" placeholder="Your Email" required type="email" />
+            </span>
+          </div>
+           <div class="element longtext">
+            <label for="message" class="tk-proxima-nova">Message*</label>
+            <span>
+              <textarea class="tk-proxima-nova text-field" id="message" name="message" required placeholder="I like to talk sports, startups, and music. Feel free to reach out."></textarea>
+            </span>
+          </div>
+           <div class="element">
+            <button type="submit" id="submit" class="btn btn-lg btn-primary"><img src="metime-assets/send-icon.png" /></button>
+          </div>
+         </form>
     </div>
 </section>
 
@@ -29,45 +34,28 @@ title: Contact Us - Second Stage Partners
 <script>
 $(function() {
   $('.error').hide();
-  $(".button").click(function() {
-    // validate and process form here
-     
-   /* $('.error').hide();
-    var name = $("input#name").val();
-      if (name == "") {
-      $("label#name_error").show();
-      $("input#name").focus();
-      return false;
-    }
-      var email = $("input#email").val();
-      if (email == "") {
-      $("label#email_error").show();
-      $("input#email").focus();
-      return false;
-    }
-      var phone = $("input#phone").val();
-      if (phone == "") {
-      $("label#phone_error").show();
-      $("input#phone").focus();
-      return false;
-    }*/
+  $("#submit").click(function() {
      
      //process the form
-     var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone;
-//alert (dataString);return false;
+    var data = {
+    name: $("#name").val(),
+    email: $("#email").val(),
+    message: $("#message").val()
+};
+//alert ($name);return false;
 $.ajax({
-  type: "GET", //post was causing a 405 error due to subdomain/DNS issues
-  url: "/mailer.php",
-  data: dataString,
+  type: "POST", //post was causing a 405 error due to subdomain/DNS issues
+  url: "/mailer.php", //MAILER IS NOT WORKING :(
+  data: data,
   success: function() {
-    
-    $('#contact_form').html("<div id='message'></div>");
+    alert('success');
+    /*$('#contact_form').html("<div id='message'></div>");
     $('#message').html("<h2>Contact Form Submitted!</h2>")
     .append("<p>Thanks! We will be in touch soon.</p>")
     .hide()
     .fadeIn(1500, function() {
       $('#message').append("<img id='checkmark' src='images/check.png' />");
-    });
+    });*/
   }
 });
 return false;
