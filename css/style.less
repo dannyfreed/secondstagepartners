@@ -1,19 +1,30 @@
+---
+---
+
+
+$biscay: rgb(27,60,105);
+$apple: rgb(118,190,75);
+$white: rgb(255,255,255);
+$mischka: rgb(238,239,245);
+$alabaster: rgb(250,250,250);
+$mine-shaft: rgb(60,60,60);
+$black: rgb(0,0,0);
+
 /*HEADER CSS*/
 body{
   /*padding-top:52px;*/
 }
 .glass{
-  background: rgba(255, 255, 255, 0.93);
+
   border-bottom: 1px solid;
   border-bottom-color: #ccc;
   border-bottom-color: rgba(255, 255, 255, 0.2);
-  /*background-color: rgba(255, 255, 255, 0.2);*/
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 2px 5px rgba(182, 182, 182, 0.3)
-}
-.clear{
-  background:transparent;
+
 }
 #headerrr{
+  background-color:transparent
 }
 #header{
   background-color: rgba(255, 255, 255, 0.96);
@@ -44,6 +55,7 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 }
 .rmm * {
   -webkit-tap-highlight-color:transparent !important;
+  font-family:Arial;
 }
 .rmm a {
 
@@ -132,7 +144,7 @@ font-size: 15px
   top:9px;
   left:9px;
   font-size:16px;
-  color:#333333;
+  color:#33333;
 }
 .rmm.minimal .rmm-button {
   display:block;
@@ -145,7 +157,7 @@ font-size: 15px
   display:block;
   margin:5px 0px 5px 0px;
   height:2px;
-  background:black;
+  background:white;
   width:25px;
 }
 .rmm.minimal .rmm-toggled ul li a {
@@ -168,7 +180,7 @@ font-size: 15px
 
 @media screen and (max-width : 640px) {
   .navbar-brand{
-    display:inline-block;
+    display:none;
   }
 }
 /*END HEADER*/
@@ -180,23 +192,9 @@ font-size: 15px
 footer{
   zoom:1;
   overflow:hidden;
+  height:100px;
   text-align:center;
-  background-image:url('/assets/footer-background.jpg');
-  color:white;
-  font-weight:300;
-}
-.sitemap-span > a{
-  margin-left:1em;
-  margin-right:1em;
-  color:white;
-  font-weight:300;
-}
-.spacer{
-  padding:7em;
-}
-.spacer > img{
-  margin-left:auto;
-  margin-right:auto;
+  background:#CCC;
 }
 /*end global*/
 
@@ -217,13 +215,10 @@ section{
 }
 .top-home > h1{
   padding-top: 6em;
-  font-weight:600;
-  text-shadow: 1px 1px 25px white;
 }
 .top-home > h4{
-  font-weight:400;
+  font-weight:300;
   max-width: 65%;
-  text-shadow: 1px 1px 25px white;
 }
 .action-buttons{
   padding-top:3em;
@@ -257,45 +252,21 @@ height: 70px;
   padding-top:52px;
   text-align:center;
 }
-/*.top-about, .bios{
-  background:#f2f4f8;
-}*/
 .bios > .row > div{
-  background:transparent;
+  background:blue;
+  border:1px solid black;
   zoom:1;
   overflow:hidden;
   text-align:center;
   height:auto;
+  max-height:700px;
 }
 .bio-pic{
+  max-width:300px;
   margin-left:auto;
   margin-right:auto;
 }
 .clicked{
   height:1000px !important;
   -webkit-animation-duration:0.7s;-moz-animation-duration:0.7s;-ms-animation-duration:0.7s;-o-animation-duration:0.7s;animation-duration:0.7s;
-}
-.node{
-  margin-left:auto;
-  margin-right:auto;
-  height:auto;
-  width:100%;
-  background-color:white;
-}
-.node img{
-  margin-left:auto;
-  margin-right:auto;
-  box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
--webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
--moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
-}
-/*.node-info{
-  border:1px solid transparent;
-  -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
-  -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
-  box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
-}*/
-.bios > .row{
-  margin-top:1em;
-  margin-bottom:1em;
 }
