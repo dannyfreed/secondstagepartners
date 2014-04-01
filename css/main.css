@@ -12,6 +12,7 @@ body{
 }
 .clear{
   background:transparent;
+  position:absolute;
 }
 #headerrr{
 }
@@ -302,13 +303,17 @@ height: 70px;
   text-align:center;
 }
 .inner{
-  padding: 80px 20px 100px;
+  padding: 80px 20px 60px;
   text-align:center;
   color:white;
 }
 .inner > img{
   margin-left:auto;
   margin-right:auto;
+  margin-bottom:3em;
+}
+.inner > h2{
+  margin-bottom:1em;
 }
 .outer:before{
   content:"";
@@ -633,6 +638,19 @@ z-index: -1;
 /*END FRAMEWORK*/
 
 /*BEGIN ABOUT*/
+.submenu{
+  position: fixed;
+top: 75px;
+font-size:13px;
+}
+.bios > .custom-container > .row > div{
+  zoom:1;
+  overflow:hidden;
+}
+.custom-container{
+  padding-left:15%;
+  width:100%;
+}
 .top-about{
   padding-top:52px;
   text-align:center;
@@ -668,15 +686,11 @@ z-index: -1;
   box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
 -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
 -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
-max-width:230px;
 }
-/*.node-info{
-  border:1px solid transparent;
-  -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
-  -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
-  box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
-}*/
-.bios > .row{
+.node-info{
+  text-align:center;
+}
+.bios > .custom-container > .row{
   margin-top:5em;
   margin-bottom:5em;
 }
