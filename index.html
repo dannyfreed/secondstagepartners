@@ -3,7 +3,7 @@ layout: default-standard
 title: Second Stage Partners
 ---
 
-<section class="top-home">
+<section id="intro" class="top-home">
 	<h1>Take your business to the next stage</h1>
 	<h4>We bring a proven, experienced team to help you accelerate growth quickly and efficiently</h4>
 	<div class="action-buttons">
@@ -16,7 +16,7 @@ title: Second Stage Partners
 Quotes go here?
 <br /><br /><br />
 </section>-->
-<section class="about">
+<section id="about" class="about">
 	<h1>2ndStage Partners helps early stage and second stage companies efficiently increase the velocity of revenue growth in order to achieve business maturity.</h1>
 	<h4>We know we work well together, and we know we work well separately, having individually spent decades on the frontlines of dozens of successful growth companies, startups, mergers, acquisitions and shareholder liquidity events. We’re on a mission--we want to help companies grow (and grow quickly!) by offering our unique combination of individual experience and collective success.</h4>
 	<img id="spaceship" src="/assets/spaceship.png" class="img-responsive" />
@@ -33,7 +33,7 @@ $('.about').waypoint(function() {
   	$('#spaceship').addClass('animated bounceOutRight');
 });
 </script>
-
+<section id="framework">
 <section class="top-framework">
 <div class="cust-container">
 	<div id="column1" class="column col-xs-12 col-sm-4 col-md-4 col-lg-4 go-anim">
@@ -100,9 +100,10 @@ $('.about').waypoint(function() {
 		</div>
 	</div>
 </section>
+</section>
 
-<section class="team">
-<h3>Our Team:</h3>
+<section id="team" class="team">
+<h3 class="section-title">Our Team:</h3>
 	<ul id="da-thumbs" class="da-thumbs">
 		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 			<a>
@@ -167,7 +168,7 @@ $('.about').waypoint(function() {
 	</ul>
 </section>
 
-<section style="padding-top:55px;" class="top-contact">
+<section id="contact" style="padding-top:55px;" class="top-contact">
     <div id="contact_form">
          <form id="contactMe" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" method="post" action="#">
           <div class="element text">
@@ -204,18 +205,18 @@ $('.about').waypoint(function() {
 
 <script>
 
-$( document ).ready(function() {
+$('#spaceship').waypoint(function() {
   var counter = 0
     do {
     $(".one").css('visibility','visible').fadeIn("slow");
     $(".one").addClass("animated-one");
-    $(".one").addClass("bounceInDown");
+    $(".one").addClass("pop-in");
     $(".two").css('visibility','visible').fadeIn("slow");
     $('.two').addClass('animated-two');
-    $('.two').addClass('bounceInDown');
+    $('.two').addClass('box-appear');
     $(".three").css('visibility','visible').fadeIn("slow");
     $('.three').addClass('animated-three');
-    $('.three').addClass('bounceInDown');
+    $('.three').addClass('box-appear');
   } while (counter > 0); 
     
 });

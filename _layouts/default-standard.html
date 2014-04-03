@@ -53,25 +53,36 @@
           </a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li id="home" class="nav-list active"><a href="index.html">Home</a></li>
-            <li id="about" class="nav-list dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="about.html">About <!--<b class="caret">--></b></a>
-              <ul class="dropdown-menu">
-                <li>
-                    <a href="about.html">Our Team</a>
-                    <a href="about.html">Our Heritage</a>
-                    <a href="about.html">What is Second Stage?</a>
-                    <a href="about.html">Clients/Partners</a>
-                </li>
-              </ul>
-            </li>
-            <li id="projects" class="nav-list"><a href="framework.html">Framework</a></li>
-            <li id="projects" class="nav-list"><a href="news.html">News</a></li>
-            <li id="contact" class="nav-list"><a href="contact.html">Contact</a></li>
+          <ul id="top-nav" class="nav navbar-nav">
+            <li id="home" class="nav-list active"><a href="#intro">Home</a></li>
+            <li id="about" class="nav-list dropdown"><a href="#about">About</a></li>
+            <li id="projects" class="nav-list"><a href="#framework">Framework</a></li>
+            <li id="projects" class="nav-list"><a href="#news">News</a></li>
+            <li id="contact" class="nav-list"><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
     </header>
+
+    <script>
+$(window).scroll(function () {
+    if ($(document).scrollTop() <= 650) {
+        $('header').addClass('clear');
+        $('header').removeClass('glass');
+        $('header').removeClass('scroling-header');
+        $('header').css("background","transparent");
+        //$('.logo').removeClass('tiny-logo');
+        //$('nav').removeClass('tiny-nav');
+    } else { //when you scroll down
+        $('header').addClass('scrolling-header');
+        $('header').removeClass('clear');
+        $('header').addClass('glass');
+        $('header').css("background","rgba(255, 255, 255, 0.93)");
+        //$('.logo').addClass('tiny-logo');
+        //$('nav').addClass('tiny-nav');
+    }
+});
+</script>
+
 
           {{ content }}
 
@@ -94,5 +105,54 @@
           </div>
         </div>
       </footer>
+
+      <script>
+      //SCRIPT FOR ACTVE CLASS IN
+// Cache selectors
+var lastId,
+    topMenu = $("#top-nav"),
+    topMenuHeight = topMenu.outerHeight()+50, //+ height of header (padding-top of body)
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }                   
+});
+</script>
     </body>
 </html>
