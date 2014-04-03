@@ -289,9 +289,9 @@ section{
   padding-bottom:3em;
 }
 .top-framework{
-  padding-top:52px;
+  /*padding-top:52px;*/
   text-align:center;
-  background:#506a8e;
+  background:#193b6a;
 }
 .small-icons{
   margin-left: auto;
@@ -614,25 +614,25 @@ z-index: -1;
 @media (min-width:768px) and (max-width:855px) {
   .framework-details:before{
     display:block;
-    top: 1910px;
+    top: 2010px;
   } 
 }
 @media (min-width:856px) and (max-width: 993px) {
   .framework-details:before{
     display:block;
-    top: 1825px;
+    top: 1925px;
   } 
 }
-@media (min-width:994px) and (max-width:1050px){
+@media (min-width:994px) and (max-width:1170px){
   .framework-details:before{
     display:block;
-    top: 1805px;
+    top: 1905px;
   } 
 }
-@media (min-width:1051px){
+@media (min-width:1171px){
   .framework-details:before{
     display:block;
-    top: 1755px;
+    top: 1865px;
   } 
 }
 /*END FRAMEWORK*/
@@ -699,9 +699,199 @@ width:150px;
 
 /*About 1 pager*/
 .about{
-  background-image:url('/assets/subtle-dots.png');
+  background-image:url('/assets/light_wool.png');
   text-align:center;
-  padding-left:3em;
-  padding-right:3em;
+  padding-left:4em;
+  padding-right:4em;
   padding-top:2em;
+  padding-bottom:2em;
 }
+.about > h1{
+  margin-top:0;
+}
+.about > img{
+  margin-top:1.5em;
+  margin-bottom:1.5em;
+  margin-left:auto;
+  margin-right:auto;
+  visibility:hidden;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  visibility:visible;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceOutRight {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px) translateY(-1000px);
+    transform: translateX(2000px) translateY(-1000px);
+  }
+}
+
+@keyframes bounceOutRight {
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px) translateY(-1000px);
+    -ms-transform: translateX(2000px) translateY(-1000px);
+    transform: translateX(2000px) translateY(-1000px);
+  }
+}
+
+.bounceOutRight {
+  -webkit-animation-name: bounceOutRight;
+  animation-name: bounceOutRight;
+}
+/*end about 1 pager*/
+
+/*TEAM 1 pager*/
+.da-thumbs {
+  list-style: none;
+  width: 100%;
+  height: auto;
+  zoom: 1;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+.da-thumbs > li {
+  background: #fff;
+  position: relative;
+  padding:0;
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+  display: block;
+  position: relative;
+}
+.da-thumbs li a {
+  overflow: hidden;
+}
+.da-thumbs li a div {
+  position: absolute;
+  background: #333;
+  background: rgba(75,75,75,0.7);
+  width: 100%;
+  height: 100%;
+}
+.da-thumbs li a div span.title {
+  display: block;
+  padding: 10px 0;
+  margin: 20px 20px 20px 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+#da-thumbs > li > a > div > .short-description{
+  color:white;
+  font-size:13px;
+  margin-left:20px;
+  margin-right:20px;
+}
+.read-more{
+  color:white;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  cursor:pointer;
+}
+.read-more:hover{
+  text-decoration: underline;
+}
+/*END team 1 pager*/

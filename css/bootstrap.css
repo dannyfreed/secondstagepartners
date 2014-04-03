@@ -364,7 +364,7 @@ h6,
 .h6 {
   font-family: inherit;
   font-weight: 300;
-  line-height: 1.1;
+  /*line-height: 1.1; defaults to body of 1.42...*/
   color: inherit;
 }
 h1 small,
@@ -2081,7 +2081,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: #193b6a;
   border-color: #357ebd;
 }
 .btn-primary:hover,
@@ -2090,7 +2090,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #3276b1;
+  background-color: #152D4E;
   border-color: #285e8e;
 }
 .btn-primary:active,
@@ -2113,7 +2113,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
+  background-color: #152D4E;
   border-color: #357ebd;
 }
 .btn-primary .badge {

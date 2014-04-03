@@ -8,7 +8,7 @@ title: Second Stage Partners
 	<h4>We bring a proven, experienced team to help you accelerate growth quickly and efficiently</h4>
 	<div class="action-buttons">
 		<button type="button" class="btn btn-lg btn-primary">More Info</button>
-		<button type="button" class="btn btn-lg btn-success">Get in Touch!</button>
+		<button id="primary" type="button" class="btn btn-lg btn-success">Get in Touch!</button>
 	</div>
 </section>
 <!--<section class="quotes">
@@ -17,10 +17,22 @@ Quotes go here?
 <br /><br /><br />
 </section>-->
 <section class="about">
-<h1>2ndStage Partners helps early stage and second stage companies efficiently increase the velocity of revenue growth in order to achieve business maturity.</h1>
-<p>We know we work well together, and we know we work well separately, having individually spent decades on the frontlines of dozens of successful growth companies, startups, mergers, acquisitions and shareholder liquidity events. We’re on a mission--we want to help companies grow (and grow quickly!) by offering our unique combination of individual experience and collective success.</p>
+	<h1>2ndStage Partners helps early stage and second stage companies efficiently increase the velocity of revenue growth in order to achieve business maturity.</h1>
+	<h4>We know we work well together, and we know we work well separately, having individually spent decades on the frontlines of dozens of successful growth companies, startups, mergers, acquisitions and shareholder liquidity events. We’re on a mission--we want to help companies grow (and grow quickly!) by offering our unique combination of individual experience and collective success.</h4>
+	<img id="spaceship" src="/assets/spaceship.png" class="img-responsive" />
 </section>
-
+<script>
+$('#primary').waypoint(function() {
+	$('#spaceship').css("visibility","visible");
+  	$('#spaceship').addClass('animated bounceInLeft');
+});
+</script>
+<script>
+$('.about').waypoint(function() {
+	$('#spaceship').removeClass('animated bounceInLeft');
+  	$('#spaceship').addClass('animated bounceOutRight');
+});
+</script>
 
 <section class="top-framework">
 <div class="cust-container">
@@ -88,6 +100,107 @@ Quotes go here?
 		</div>
 	</div>
 </section>
+
+<section class="team">
+<h3>Our Team:</h3>
+	<ul id="da-thumbs" class="da-thumbs">
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
+					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
+					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
+					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
+					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
+					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
+					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+</section>
+
+<section style="padding-top:55px;" class="top-contact">
+    <div id="contact_form">
+         <form id="contactMe" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" method="post" action="#">
+          <div class="element text">
+            <label class="tk-proxima-nova">Name*</label>
+            <span>
+              <input class="tk-proxima-nova text-field" id="name" name="name" placeholder="Your Name" required type="text" />
+            </span>
+          </div>  
+           <div class="element text">
+            <label for="email" class="tk-proxima-nova">Email*</label>
+            <span>
+              <input id="email" class="tk-proxima-nova text-field" name="email" placeholder="Your Email" required type="email" />
+            </span>
+          </div>
+           <div class="element longtext">
+            <label for="message" class="tk-proxima-nova">Message*</label>
+            <span>
+              <textarea class="tk-proxima-nova text-field" id="message" name="message" required placeholder="I like to talk sports, startups, and music. Feel free to reach out."></textarea>
+            </span>
+          </div>
+           <div class="element">
+            <button type="submit" id="submit" class="btn btn-lg btn-primary"><img src="metime-assets/send-icon.png" /></button>
+          </div>
+         </form>
+    </div>
+</section>
+
+<script type="text/javascript" src="/js/jquery.hoverdir.js"></script>	
+<script type="text/javascript">
+	$(function() {
+		$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+	});
+</script>
 
 <script>
 
