@@ -22,7 +22,7 @@ Quotes go here?
 	<img id="spaceship" src="/assets/spaceship.png" class="img-responsive" />
 </section>
 <script>
-$('#primary').waypoint(function() {
+$('#intro > h4').waypoint(function() {
 	$('#spaceship').css("visibility","visible");
   	$('#spaceship').addClass('animated bounceInLeft');
 });
@@ -101,71 +101,186 @@ $('.about').waypoint(function() {
 	</div>
 </section>
 </section>
+<!-- Modal -->
+<div class="modal fade" id="larryFreed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Larry Freed, Managing Partner</h4>
+      </div>
+      <div class="modal-body">
+        Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of the B2B technology firm ForeSee, the world leader in customer experience analytics.  Larry led the company from inception in 2001 to a successful exit in 2013 that returned over 22 times the capital originally invested in the business while also growing revenue every quarter since the company was founded. During his tenure at ForeSee, Larry assembled a world-class executive leadership team, many of whom he has brought on to join him at 2nd Stage Partners. 
+<br /><br />
+Prior to founding ForeSee, Larry held several senior executive positions at Compuware Corporation, leading a variety of e-commerce and professional services programs.  He served as Vice President of e-Business, where he was responsible for directing the national e-Business practice as well as the design, development, and implementation of e-Business strategies for numerous companies.  Before joining Compuware, Larry was CTO at Bank One.
+<br /><br />
+Larry is the author of two books, Managing Forward (2011) and the national best-seller Innovating Analytics (2013). Larry is a top rated speaker and innovator on the way we look at the customer experience across all touch points and at the brand level.  Dedicating an enormous body of research to improving customer satisfaction analytics across all disciplines for over a decade, Larry and ForeSee developed the Word of Mouth Index (WoMI) and the ForeSee Experience Index. He has been quoted in numerous publications and media including CNN, the Wall Street Journal, the New York Times, Fortune, Forbes, the Washington Post, Tech Crunch, Mashable, and Investor’s Business Daily, as well as hundreds of other trade and local media. 
+<br /><br />
+Larry is currently on the University of Michigan Technology Transfer National Advisory Board and previously held board and leadership positions with various other industry groups.  Larry was an Ernst &amp; Young Entrepreneur of the Year Finalist and a Digital Analytics Association Most Influential Industry Contributor Finalist.  In addition, under Larry’s leadership, ForeSee won various awards and recognitions such as Ann Arbor Business Review Company of the Year, seven-time Ann Arbor Spark FastTrack award, Crain’s Detroit Business Cool Places to Work in Michigan, Detroit Free Press’ Top Workplace, Gold Best in Biz Award for most Innovative Company of the year, CEO World Award, Golden Bridge Award, Stevie Awards and Edison Awards.
+<br /><br />
+Larry has a B.S. in computer science from the University of Michigan and a M.B.A. from Wayne State University.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="md-overlay"></div>
 
 <section id="team" class="team">
-<h3 class="section-title">Our Team:</h3>
-	<ul id="da-thumbs" class="da-thumbs">
-		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<a>
-				<img src="/assets/larryfreed.jpg" class="img-responsive" />
-				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
-					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
-					</p>
-					<p class="read-more">+ Read More</p>
-				</div>
-			</a>
+	<div class="wrapper-header">
+	     <span class="icon" style="opacity: 1;"><img src="http://www.earlybird.com/img/icon-contact@2x.png" width="35" height="35"></span>
+	     <span class="line" style="height: 35px;"></span>
+	     <h3>Our Team</h3>
+	     <div style="clear: both"></div>
+	</div>
+	<p style="padding-left:6em; padding-right:6em; margin-bottom:2em">Our partners bring proven executive experience with the most mission-critical business functions, having gained that collective experience on the frontlines of dozens of successful growth companies, startups, mergers, acquisitions and shareholder liquidity events. Our partners’ active participation and proven experience puts capital to work effectively and efficiently while your company accelerates growth.</p>
+	<div style="padding-left:15px; padding-right:15px;" class="fluid-container">
+	<ul style="list-style:none">
+		<li class="bio col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive bio-pic" src="/assets/larryfreed2.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h5><b style="font-weight:500">Larry Freed</b><br/>Managing Partner</h5>
+				<p>Larry was the President and CEO of ForeSee, leading the company from inception to successful exit in 2013. He has more than 30 years of executive experience, including serving as CTO at BankOne. He is a widely-recognized speaker and author of two books, and specializes in rapid-growth executive strategies for early- and second-stage companies.
+				</p>
+				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
+			</div>
 		</li>
-		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<a>
-				<img src="/assets/larryfreed.jpg" class="img-responsive" />
-				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
-					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
-					</p>
-					<p class="read-more">+ Read More</p>
-				</div>
-			</a>
+		<li class="bio col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive bio-pic" src="/assets/johnwilliams.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h5><b style="font-weight:500">John Williams</b><br/>General Partner</h5>
+				<p>John has more than 30 years of executive experience helping small, medium, and large technology companies accelerate growth and enhance operational efficiency through strategic alignment. John has extensive experience in product strategy and execution, professional services leadership, line-of-business management, definition and execution of go-to-market strategy, R&amp;D, and organizational alignment.
+				</p>
+				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
+			</div>
 		</li>
-		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<a>
-				<img src="/assets/larryfreed.jpg" class="img-responsive" />
-				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
-					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
-					</p>
-					<p class="read-more">+ Read More</p>
-				</div>
-			</a>
+		<li class="bio col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive bio-pic" src="/assets/aaronwatson.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h5><b style="font-weight:500">Aaron Watson</b><br/>General Partner</h5>
+				<p>Aaron is a seasoned executive whose career includes a remarkable series of successful exits that yielded substantial returns for equity holders. With nearly 20 years in online business and technology he has held leadership positions in organizations of varied size and maturity, helping all of them substantially increase their levels of success.
+				</p>
+				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
+			</div>
 		</li>
-		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<a>
-				<img src="/assets/larryfreed.jpg" class="img-responsive" />
-				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
-					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
-					</p>
-					<p class="read-more">+ Read More</p>
-				</div>
-			</a>
+		<li class="bio col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive bio-pic" src="/assets/cia.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h5><b style="font-weight:500">Cia McCaffrey</b><br/>General Partner</h5>
+				<p>Cia has more than 25 years of experience in human resources and recruiting as well as organizational development and growth. With experience in both early-stage and mature company environments, Cia specializes in supporting rapid, cost-efficient growth through effective management of the best human capital, including hiring and training.
+				</p>
+				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
+			</div>
 		</li>
-		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<a>
-				<img src="/assets/larryfreed.jpg" class="img-responsive" />
-				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
-					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
-					</p>
-					<p class="read-more">+ Read More</p>
-				</div>
-			</a>
+		<li class="bio col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive bio-pic" src="/assets/davescott.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h5><b style="font-weight:500">David T. Scott</b><br/>Associate</h5>
+				<p>David’s 20 years of professional experiences and natural talent for helping growth companies and billion-dollar organizations succeed makes him one of the leading minds in the marketing field. He specializes in lead-generation marketing and business strategies that leverage marketing in the most efficient and cost-effective ways for growth companies. 
+				</p>
+				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
+			</div>
 		</li>
-		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<a>
-				<img src="/assets/larryfreed.jpg" class="img-responsive" />
-				<div><span class="title">Larry Freed<br />CEO &amp; Managing Partner</span>
-					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
-					</p>
-					<p class="read-more">+ Read More</p>
-				</div>
-			</a>
+		<li class="bio col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive bio-pic" src="/assets/sarah.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h5><b style="font-weight:500">Sarah Allen-Short</b><br/>Associate</h5>
+				<p>Sarah has more than 15 years of experience creating, overseeing, and implementing strategic marketing and communications plans for private and public organizations of all sizes. She specializes in differentiated marketing and public relations that helps companies cut through the clutter and connect with audiences in meaningful ways.
+				</p>
+				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
+			</div>
+		</li>
+		<li class="bio col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive bio-pic" src="/assets/joyce.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h5><b style="font-weight:500">Joyce Hrinya</b><br/>Associate</h5>
+				<p>Joyce has 25 years of experience helping companies build their brand. She has held key executive positions in marketing, customer satisfaction and business development. Her knowledge of marketing and strategy has helped many companies achieve significant growth.
+				</p>
+				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
+			</div>
 		</li>
 	</ul>
+	<!--<ul id="da-thumbs" class="da-thumbs">
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Larry Freed<br />Managing Partner</span>
+					<p class="short-description">Larry was the President and CEO of ForeSee, leading the company from inception to successful exit in 2013. He has more than 30 years of executive experience, including serving as CTO at BankOne. He is a widely-recognized speaker and author of two books, and specializes in rapid-growth executive strategies for early- and second-stage companies.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">John Williams<br />General Partner</span>
+					<p class="short-description">John has more than 30 years of executive experience helping small, medium, and large technology companies accelerate growth and enhance operational efficiency through strategic alignment. John has extensive experience in product strategy and execution, professional services leadership, line-of-business management, definition and execution of go-to-market strategy, R&amp;D, and organizational alignment.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/aaronwatson.jpg" class="img-responsive" />
+				<div><span class="title">Aaron Watson<br />General Partner</span>
+					<p class="short-description">Aaron is a seasoned executive whose career includes a remarkable series of successful exits that yielded substantial returns for equity holders. With nearly 20 years in online business and technology he has held leadership positions in organizations of varied size and maturity, helping all of them substantially increase their levels of success.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/cia.jpg" class="img-responsive" />
+				<div><span class="title">Cia McCaffrey<br />General Partner</span>
+					<p class="short-description">Cia has more than 25 years of experience in human resources and recruiting as well as organizational development and growth. With experience in both early-stage and mature company environments, Cia specializes in supporting rapid, cost-efficient growth through effective management of the best human capital, including hiring and training.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/davescott.jpg" class="img-responsive" />
+				<div><span class="title">David T. Scott<br />Associate</span>
+					<p class="short-description">Prior to founding 2nd Stage Partners, Larry Freed was the founder and CEO of ForeSee, the industry leader in Customer Experience Analytics. Larry led the company from inception to a successful exit that returned over 22 times the capital that was invested in the business. Larry built the company from the ground up leading the company to be the established thought leader in Customer Experience Analytics and assembled a world-class executive leadership team.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<a>
+				<img src="/assets/larryfreed.jpg" class="img-responsive" />
+				<div><span class="title">Sarah Allen-Short<br />Associate</span>
+					<p class="short-description">Sarah has more than 15 years of experience creating, overseeing, and implementing strategic marketing and communications plans for private and public organizations of all sizes. She specializes in differentiated marketing and public relations that helps companies cut through the clutter and connect with audiences in meaningful ways.
+					</p>
+					<p class="read-more">+ Read More</p>
+				</div>
+			</a>
+		</li>
+	</ul>-->
+	</div><!--fluid container-->
 </section>
 
 <section id="contact" style="padding-top:55px;" class="top-contact">
@@ -205,7 +320,7 @@ $('.about').waypoint(function() {
 
 <script>
 
-$('#spaceship').waypoint(function() {
+$('#about > h1').waypoint(function() {
   var counter = 0
     do {
     $(".one").css('visibility','visible').fadeIn("slow");
@@ -221,3 +336,7 @@ $('#spaceship').waypoint(function() {
     
 });
 </script>
+
+<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="/js/classie.js"></script>
+		<script src="/js/modalEffects.js"></script>
