@@ -16,10 +16,10 @@ title: Second Stage Partners
 Quotes go here?
 <br /><br /><br />
 </section>-->
-<section id="a" class="about">
-	<h1>2ndStage Partners helps early stage and second stage companies efficiently increase the velocity of revenue growth in order to achieve business maturity.</h1>
+<section id="about" class="about">
+	<h1>2ndStage Partners helps early stage and second stage companies efficiently increase the velocity of revenue growth in order to achieve business <span id="blastoff">maturity.</span></h1>
 	<h4>We know we work well together, and we know we work well separately, having individually spent decades on the frontlines of dozens of successful growth companies, startups, mergers, acquisitions and shareholder liquidity events. We’re on a mission--we want to help companies grow (and grow quickly!) by offering our unique combination of individual experience and collective success.</h4>
-	<h4>We see a huge gap in entrepreneurial support in America today. There is lots of help for startups, but the skills and expertise that make a successful startup don’t necessarily translate to rapid, efficient growth to and through the second stage. We know how to do it. Let us help you.</h4>
+	<h4 id="trigger">We see a huge gap in entrepreneurial support in America today. There is lots of help for startups, but the skills and expertise that make a successful startup don’t necessarily translate to rapid, efficient growth to and through the second stage. We know how to do it. Let us help you.</h4>
 	<img id="spaceship" src="/assets/spaceship.png" class="img-responsive" />
 </section>
 <script>
@@ -29,7 +29,7 @@ $('#intro > h4').waypoint(function() {
 });
 </script>
 <script>
-$('.about').waypoint(function() {
+$('#blastoff').waypoint(function() {
 	$('#spaceship').removeClass('animated bounceInLeft');
   	$('#spaceship').addClass('animated bounceOutRight');
 });
@@ -378,7 +378,7 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
       });    
   });
 </script>
-<section id="contact" style="padding-top:55px;" class="top-contact">
+<section id="contact" style="padding-top:2em;" class="top-contact">
     <div class="wrapper-header">
 	     <span class="icon" style="opacity: 1;"><img src="/assets/contact.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
@@ -405,6 +405,7 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
               <textarea class="tk-proxima-nova text-field" id="message" name="message" required placeholder="I like to talk sports, startups, and music. Feel free to reach out."></textarea>
             </span>
           </div>
+          <br /><br /><br /><br />
            <div class="element">
             <button type="submit" id="submit" class="btn btn-lg btn-primary"><img src="metime-assets/send-icon.png" /></button>
           </div>
@@ -416,7 +417,7 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 
 <script>
 
-$('#a > h1').waypoint(function() {
+$('#trigger').waypoint(function() {
   var counter = 0
     do {
     $(".one").css('visibility','visible').fadeIn("slow");

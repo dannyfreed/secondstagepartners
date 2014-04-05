@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse">
           <ul id="top-nav" class="nav navbar-nav">
             <li id="" class="nav-list active"><a href="#intro">Home</a></li>
-            <li id="" class="nav-list dropdown"><a href="#a">About</a></li>
+            <li id="" class="nav-list dropdown"><a href="#about">About</a></li>
             <li id="" class="nav-list"><a href="#framework">Framework</a></li>
             <li id="" class="nav-list"><a href="#team">Team</a></li>
             <li id="" class="nav-list"><a href="#news">News</a></li>
@@ -99,7 +99,7 @@ $(window).scroll(function () {
 // Cache selectors
 var lastId,
     topMenu = $("#top-nav"),
-    topMenuHeight = topMenu.outerHeight(), //+ height of header (padding-top of body)
+    topMenuHeight = topMenu.outerHeight() -52, //+ height of header (padding-top of body)
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
