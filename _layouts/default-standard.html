@@ -9,7 +9,8 @@
         <!--JQUERY UI for what?-->
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-        <script type-"text-javascript" src="/js/readmore.min.js"></script>
+        <script type-"text/javascript" src="/js/readmore.min.js"></script>
+        
         
         <script src="/js/waypoints.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
@@ -22,22 +23,8 @@
         <link rel="stylesheet" href="/css/main.css">
         <!--custom fonts-->
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-        <script>
-        $.fn.clicktoggle = function(a, b) {
-            return this.each(function() {
-                var clicked = false;
-                $(this).click(function() {
-                    if (clicked) {
-                        clicked = false;
-                        return b.apply(this, arguments);
-                    }
-                    clicked = true;
-                    return a.apply(this, arguments);
-                });
-            });
-        };
-        </script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        
     </head>
     <body>
       <header id="headerrr" class="clear navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -54,11 +41,12 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul id="top-nav" class="nav navbar-nav">
-            <li id="home" class="nav-list active"><a href="#intro">Home</a></li>
-            <li id="about" class="nav-list dropdown"><a href="#about">About</a></li>
-            <li id="projects" class="nav-list"><a href="#framework">Framework</a></li>
-            <li id="projects" class="nav-list"><a href="#news">News</a></li>
-            <li id="contact" class="nav-list"><a href="#contact">Contact</a></li>
+            <li id="" class="nav-list active"><a href="#intro">Home</a></li>
+            <li id="" class="nav-list dropdown"><a href="#about">About</a></li>
+            <li id="" class="nav-list"><a href="#framework">Framework</a></li>
+            <li id="" class="nav-list"><a href="#team">Team</a></li>
+            <li id="" class="nav-list"><a href="#news">News</a></li>
+            <li id="" class="nav-list"><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
     </header>
@@ -102,16 +90,16 @@ $(window).scroll(function () {
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p class="copyright tk-proxima-nova">&copy; 2nd Stage Partners, 2014</p>
+            <p class="copyright">Made with ♥ by <a href="http://www.gadole.com">Gadole</a></p>
           </div>
         </div>
       </footer>
 
-      <script>
-      //SCRIPT FOR ACTVE CLASS IN
+<script>
 // Cache selectors
 var lastId,
     topMenu = $("#top-nav"),
-    topMenuHeight = topMenu.outerHeight()+50, //+ height of header (padding-top of body)
+    topMenuHeight = topMenu.outerHeight(), //+ height of header (padding-top of body)
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items

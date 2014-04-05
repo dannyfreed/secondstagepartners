@@ -19,13 +19,8 @@ Quotes go here?
 <section id="about" class="about">
 	<h1>2ndStage Partners helps early stage and second stage companies efficiently increase the velocity of revenue growth in order to achieve business maturity.</h1>
 	<h4>We know we work well together, and we know we work well separately, having individually spent decades on the frontlines of dozens of successful growth companies, startups, mergers, acquisitions and shareholder liquidity events. We’re on a mission--we want to help companies grow (and grow quickly!) by offering our unique combination of individual experience and collective success.</h4>
+	<h4>We see a huge gap in entrepreneurial support in America today. There is lots of help for startups, but the skills and expertise that make a successful startup don’t necessarily translate to rapid, efficient growth to and through the second stage. We know how to do it. Let us help you.</h4>
 	<img id="spaceship" src="/assets/spaceship.png" class="img-responsive" />
-	<div style="margin-bottom:0;" class="wrapper-header">
-	     <span class="icon" style="opacity: 1;"><img src="/assets/blueprint.png" width="35" height="35"></span>
-	     <span class="line" style="height: 35px;"></span>
-	     <h3>Framework &amp; Methodology:</h3>
-	     <div style="clear: both"></div>
-	</div>
 </section>
 <script>
 $('#intro > h4').waypoint(function() {
@@ -39,28 +34,40 @@ $('.about').waypoint(function() {
   	$('#spaceship').addClass('animated bounceOutRight');
 });
 </script>
-<section id="framework">
+<script>
+$('.top-framework').waypoint(function() {
+	alert('waypoint');
+	$('#spaceship').removeClass('animated bounceOutRight');
+});
+</script>
+<section class="fwork" id="framework">
+	<div style="" class="wrapper-header">
+	     <span class="icon" style="opacity: 1;"><img src="/assets/blueprint.png" width="35" height="35"></span>
+	     <span class="line" style="height: 35px;"></span>
+	     <h3>Framework &amp; Methodology:</h3>
+	     <div style="clear: both"></div>
+	</div>
 <section class="top-framework">
 <div class="cust-container">
-	<div id="column1" class="column col-xs-12 col-sm-4 col-md-4 col-lg-4 go-anim">
+	<div id="column1" class="column outer col-xs-12 col-sm-4 col-md-4 col-lg-4 go-anim">
 		<div class="inner one">
-			<img class="img-responsive" src="/assets/assess-icon.png" />
+			<img class="" src="/assets/assess-icon.png" />
 			<h2>Assessment</h2>
 			<p>2nd Stage Partners conducts a thorough appraisal of mission-critical business areas in order to assess current capabilities and identify and prioritize areas of focus. </p>
 		</div>
 	</div>
-	<div id="column2" class="column outer col-xs-12 col-sm-4 col-md-4 col-lg-4 go-anim">
+	<div id="column2" class="column outer dot col-xs-12 col-sm-4 col-md-4 col-lg-4 go-anim">
 		<div class="inner two">
-			<img class="img-responsive" src="/assets/plan-icon.png" />
+			<img class="" src="/assets/plan-icon.png" />
 			<h2>Strategic Planning</h2>
 			<p>No business can focus on everything all at once, so we pinpoint the most capital-efficient priorities in order to quickly increase revenue and synchronize the business.</p>
 		</div>
 	</div>
-	<div id="column3" class="column outer col-xs-12 col-sm-4 col-md-4 col-lg-4 go-anim">
+	<div id="column3" class="column outer dot col-xs-12 col-sm-4 col-md-4 col-lg-4 go-anim">
 		<div class="inner three">
-			<img class="img-responsive" src="/assets/execute-icon.png" />
+			<img class="" src="/assets/execute-icon.png" />
 			<h2>Execution</h2>
-			<p>We also offer “step-in” services that complement the existing team and accelerate growth. Our experienced executives serve as mentors or coaches to existing staff or can serve as interim members of the executive team</p>
+			<p>We offer “step-in” services where our experienced executives serve as mentors or coaches to existing staff or can serve as interim members of the executive team</p>
 		</div>
 	</div>
 </div>
@@ -69,44 +76,48 @@ $('.about').waypoint(function() {
 	<div class="container-fluid">
 		<h2 style="width:70%; margin-left:auto; margin-right:auto; text-align:center; font-weight:500">We help companies through a unique three-phase framework with a methodology that blends consulting into step-in execution for maximum efficiency and effectiveness:</h2>
 		<div class="row">
-			<div class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<h2>Phase 1: Growth Readiness Assessment</h2>
+			<div id="left1" class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<h2><span class="phase">Phase 1:</span>
+				<br />Growth Readiness Assessment</h2>
 				<p>2nd Stage Partners conducts a thorough appraisal of mission-critical business areas in order to assess current capabilities and identify and prioritize areas of focus. </p>
 			</div>
-			<div class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
+			<div id="middle1" class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
 				<img class="small-icons" src="/assets/small-icon-1.png" />
 			</div>
-			<div class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
+			<div id="right1" class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
 				<img class="info-pic" src="/assets/assess-graph.png" />
 			</div>
 		</div>
 		<div class="row">
-			<div class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
+			<div id="left2" class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
 				<img class="info-pic" src="/assets/assess-graph.png" />	
 			</div>
-			<div class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
+			<div id="middle2" class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
 				<img class="small-icons" src="/assets/small-icon-2.png" />
 			</div>
-			<div class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<h2>Phase 2: Strategic Roadmap</h2>
+			<div id="right2" class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<h2><span class="phase">Phase 2:</span>
+				<br />Strategic Roadmap</h2>
 				<p>No business can focus on everything all at once, so we pinpoint the most capital-efficient priorities in order to quickly increase revenue and synchronize the business. </p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<h2>Phase 3: Execution Services</h2>
+			<div id="left3" class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<h2><span class="phase">Phase 3:</span>
+				<br />Execution Services</h2>
 				<p>2nd Stage Partners offers more than just a plan; we also offer “step-in” services that complement the existing team and accelerate growth. Our experienced executives serve as mentors or coaches to existing staff or can serve as interim members of the executive team by heading up the areas identified as the biggest priorities in Phase 2.</p>
 			</div>
-			<div class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
+			<div id="middle3" class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
 				<img class="small-icons" src="/assets/small-icon-3.png" />
 			</div>
-			<div class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<img class="info-pic" src="/assets/assess-graph.png" />
+			<div id="right3" class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<img class="info-pic" src="https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/3/37/37925/business-o.jpg?1378635142" />
 			</div>
 		</div>
 	</div>
 </section>
 </section>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="larryFreed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -333,17 +344,10 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 	</ul>
 	</div><!--fluid container-->
 </section>
-<script>
-  $(document).ready(function () {    
-      $(".bio").hover(function () {    
-         $(this).find('div > a > img').removeClass('grayscale');
-      }, function () {
-          $(this).find('div > a > img').addClass('grayscale');
-      });    
-  });
-</script>
+
 
 <section class="news" id="news">
+	
 	<div class="wrapper-header">
 	     <span class="icon" style="opacity: 1;"><img src="http://www.earlybird.com/img/icon-dialog.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
@@ -354,8 +358,9 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 	<ul class="posts">
 	<p style="font-style:italic; font-weight:600;">Most Recent Post:</p>
 	    {% for post in site.posts limit:1 %}
-	    	<h2 style="margin-top:0">{{ post.title }}</h2>
+	    	
 	    	<span>{{ post.date | date_to_string }}</span>
+	    	<h2 style="margin-top:0">{{ post.title }}</h2>
 			<div class="post">
 			{{ post.content }}
 			</div>
@@ -364,8 +369,16 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
   	</ul>
   	
 </section>
-
-<section id="contact" style="padding-top:55px;" class="top-contact">
+<script>
+  $(document).ready(function () {    
+      $(".bio").hover(function () {    
+         $(this).find('div > a > img').removeClass('grayscale');
+      }, function () {
+          $(this).find('div > a > img').addClass('grayscale');
+      });    
+  });
+</script>
+<section id="contact" style="padding-top:2em;" class="top-contact">
     <div class="wrapper-header">
 	     <span class="icon" style="opacity: 1;"><img src="/assets/contact.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
@@ -399,16 +412,11 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
     </div>
 </section>
 
-<script type="text/javascript" src="/js/jquery.hoverdir.js"></script>	
-<script type="text/javascript">
-	$(function() {
-		$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-	});
-</script>
+
 
 <script>
 
-$('#about > h1').waypoint(function() {
+$('#a > h1').waypoint(function() {
   var counter = 0
     do {
     $(".one").css('visibility','visible').fadeIn("slow");
@@ -425,6 +433,51 @@ $('#about > h1').waypoint(function() {
 });
 </script>
 
-<!-- classie.js by @desandro: https://github.com/desandro/classie -->
-		<script src="/js/classie.js"></script>
-		<script src="/js/modalEffects.js"></script>
+<script>
+
+$('.inner > p').waypoint(function() {
+  var counter = 0
+    do {
+    $("#left1").css('visibility','visible').fadeIn("slow");
+    $("#left1").addClass("animated-fast");
+    $("#left1").addClass("pop-in");
+    $("#right1").css('visibility','visible').fadeIn("slow");
+    $('#right1').addClass('animated-med');
+    $('#right1').addClass('box-appear');
+    $("#middle1").css('visibility','visible').fadeIn("slow");
+    $('#middle1').addClass('animated-slow');
+    $('#middle1').addClass('box-appear');
+  } while (counter > 0); 
+    
+});
+$('#middle1').waypoint(function() {
+  var counter = 0
+    do {
+    $("#left2").css('visibility','visible').fadeIn("slow");
+    $("#left2").addClass("animated-fast");
+    $("#left2").addClass("pop-in");
+    $("#right2").css('visibility','visible').fadeIn("slow");
+    $('#right2').addClass('animated-med');
+    $('#right2').addClass('box-appear');
+    $("#middle2").css('visibility','visible').fadeIn("slow");
+    $('#middle2').addClass('animated-slow');
+    $('#middle2').addClass('box-appear');
+  } while (counter > 0); 
+    
+});
+$('#middle2').waypoint(function() {
+  var counter = 0
+    do {
+    $("#left3").css('visibility','visible').fadeIn("slow");
+    $("#left3").addClass("animated-fast");
+    $("#left3").addClass("pop-in");
+    $("#right3").css('visibility','visible').fadeIn("slow");
+    $('#right3').addClass('animated-med');
+    $('#right3').addClass('box-appear');
+    $("#middle3").css('visibility','visible').fadeIn("slow");
+    $('#middle3').addClass('animated-slow');
+    $('#middle3').addClass('box-appear');
+  } while (counter > 0); 
+    
+});
+</script>
