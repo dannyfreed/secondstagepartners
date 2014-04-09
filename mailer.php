@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "freed.danny@gmail.com";
-    $email_subject = "Personal Website Inquiry";
+    $email_subject = "2nd Stage Partners Website Inquiry";
      
      
     function died($error) {
@@ -18,12 +18,16 @@ if(isset($_POST['email'])) {
     // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
+        !isset($_POST['company']) ||
+        !isset($_POST['telephone']) ||
         !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
      
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
+    $company = $_POST['company']; //required
+    $telephone = $_POST['telephone']; //required
     $comments = $_POST['message']; // required
      
     $error_message = "";
@@ -50,6 +54,8 @@ if(isset($_POST['email'])) {
      
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Phone #: ".clean_string($telephone)."\n";
+    $email_message .= "Company: ".clean_string($company)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
      
      

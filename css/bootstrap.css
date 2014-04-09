@@ -1647,9 +1647,11 @@ legend {
   border-bottom: 1px solid #e5e5e5;
 }
 label {
-  display: inline-block;
+  /*display: inline-block;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: bold;*/
+  display:block;
+  font-weight:400;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -3822,6 +3824,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-weight:400;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;

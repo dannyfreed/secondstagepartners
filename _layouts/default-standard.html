@@ -9,16 +9,23 @@
         <!--JQUERY UI for what?-->
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-        <script type-"text/javascript" src="/js/readmore.min.js"></script>
+        <!--<script type-"text/javascript" src="/js/readmore.min.js"></script>-->
         
-        
+        <script src="/js/smooth-scroll.js"></script>
         <script src="/js/waypoints.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=0.7">
         <!-- bootstrap -->
         <link rel="stylesheet" href="/css/bootstrap.css">
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="/css/owl.carousel.css"> 
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="/css/owl.theme.css">
+
+        <!-- Include js plugin -->
+        <script src="/js/owl.carousel.js"></script>
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
         <!--custom fonts-->
@@ -35,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a style="font-weight:lighter" href="index.html" class="tk-aw-conqueror-inline navbar-brand">
+          <a style="font-weight:lighter" href="#intro" class="tk-aw-conqueror-inline navbar-brand">
             <img style="float: left; display: inline-block; width: 160px;" src="/assets/logo-notag.png" class="img-responsive" />
           </a>
         </div>
@@ -54,6 +61,7 @@
     <script>
 $(window).scroll(function () {
     if ($(document).scrollTop() <= 650) {
+      //when view is on the first section
         $('header').addClass('clear');
         $('header').removeClass('glass');
         $('header').removeClass('scroling-header');
@@ -61,6 +69,7 @@ $(window).scroll(function () {
         //$('.logo').removeClass('tiny-logo');
         //$('nav').removeClass('tiny-nav');
     } else { //when you scroll down
+        $('header').addClass('animated-topbar bounceInDown')
         $('header').addClass('scrolling-header');
         $('header').removeClass('clear');
         $('header').addClass('glass');
@@ -77,20 +86,14 @@ $(window).scroll(function () {
 
       <footer>
         <div class="row">
-          <div class="spacer col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="spacer col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <img class="img-responsive" src="/assets/footer-logo.png" />
-          </div>
-          <div class="spacer col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h3>Site Map</h3>
-            <span class="sitemap-span"><a href="index.html">Home</a><a href="about.html">About</a><a href="framework.html">Framework</a></span>
-            <br />
-            <span class="sitemap-span"><a href="news.html">News</a><a href="contact.html">Contact</a><a href="#">Terms of Use</a></span>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p class="copyright tk-proxima-nova">&copy; 2nd Stage Partners, 2014</p>
-            <p class="copyright">Made with ♥ by <a href="http://www.gadole.com">Gadole</a></p>
+            <!--<p class="copyright">Made with ♥ by <a href="http://www.gadole.com">Gadole</a></p>-->
           </div>
         </div>
       </footer>

@@ -1,9 +1,13 @@
 ---
-layout: default
+layout: default-standard
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
+<style>body{padding-top:52px;}</style>
+<div style="padding-bottom:3em" class="container">
+	<h2>{{ page.title }}</h2>
+	<p class="meta">{{ page.date | date_to_string }}</p>
+	<p class="author">{{ page.author }}</p>
+	<div class="post">
+	{{ content }}
+	</div>
+	<a href="/news.html">&laquo; View All Posts</a>
 </div>
