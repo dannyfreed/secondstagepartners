@@ -1,12 +1,13 @@
 ---
-layout: default-standard
+layout: default-standard-not-home
 ---
 <style>body{padding-top:52px;}</style>
 <div style="padding-bottom:3em" class="container">
-	<h2>{{ page.title }}</h2>
-	<p class="meta">{{ page.date | date_to_string }}</p>
-	<p class="author">{{ page.author }}</p>
-	<div class="post">
+<div>
+	<h2 class="title">{{ page.title }}</h2>
+    <p style="color:rgb(109, 109, 109);" class="author-news">{{ page.author }}</p> | <p class="meta">{{ page.date | date_to_string }}</p>
+</div>
+	<div style="margin-bottom:2em" class="post">
 	{{ content }}
 	</div>
 	<a href="/news.html">&laquo; View All Posts</a>

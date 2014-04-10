@@ -3,18 +3,21 @@ layout: default-standard-not-home
 title: Second Stage Partners
 ---
 
-<div style="padding-top:52px;" id="home">
+<div style="padding-top:52px; padding-bottom:2em" id="home">
   <ul class="posts">
   	<div style="padding-left:0" class="wrapper-header">
        <span class="icon" style="opacity: 1;"><img src="http://www.earlybird.com/img/icon-dialog.png" width="35" height="35"></span>
        <span class="line" style="height: 35px;"></span>
-       <h3>Blog</h3>
+       <h3 style="font-weight:600;">Blog</h3>
        <div style="clear: both"></div>
     </div>
     {% for post in site.posts %}
         <li>
-          <h2 class="cust-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <span>{{ post.date | date_to_string }}</span> | <span> {{ post.author }} </span>
+          <div>
+            <h2 class="cust-title title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="author-news">{{ post.author }}</p> | <p class="meta-news">{{ post.date | date_to_string }}</p>
+          </div>
+          
           <div class="tags">
             <span class="badge"> {{post.tags}} </span>
           </div>

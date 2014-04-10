@@ -29,6 +29,9 @@ $('#blastoff').waypoint(function() {
 	$('#spaceship').removeClass('animated bounceInLeft');
   	$('#spaceship').addClass('animated bounceOutRight');
 });
+$('.top-framework').waypoint(function(){
+	$('#spaceship').css("visibility","visible");
+})
 </script>
 <script>
 $('.top-framework').waypoint(function() {
@@ -37,40 +40,11 @@ $('.top-framework').waypoint(function() {
 });
 </script>
 
-<!--<section class="quotes">
-<div id="owl-demo" class="owl-carousel owl-theme">
- 
-  <div class="item"><p>“Early and 2nd Stage companies have a common problem: they get some money and then they literally can’t use it fast enough to be effective. They waste a lot of time hiring people that don’t work out, reinventing the wheel when it comes to building out various departments. 2nd Stage Partners can come in and tell you where you need to focus, what areas can afford to be ignored for awhile longer, and then they can actually do the work that needs to be done so that capital can be used efficiently and effectively for accelerated growth.--Barry Goldsmith, Managing Partner at Updata Partners
-</p></div>
-  <div class="item"><p>“Early and 2nd Stage companies have a common problem: they get some money and then they literally can’t use it fast enough to be effective. They waste a lot of time hiring people that don’t work out, reinventing the wheel when it comes to building out various departments. 2nd Stage Partners can come in and tell you where you need to focus, what areas can afford to be ignored for awhile longer, and then they can actually do the work that needs to be done so that capital can be used efficiently and effectively for accelerated growth.--Barry Goldsmith, Managing Partner at Updata Partners
-</p></div>
-<div class="item"><p>“Early and 2nd Stage companies have a common problem: they get some money and then they literally can’t use it fast enough to be effective. They waste a lot of time hiring people that don’t work out, reinventing the wheel when it comes to building out various departments. 2nd Stage Partners can come in and tell you where you need to focus, what areas can afford to be ignored for awhile longer, and then they can actually do the work that needs to be done so that capital can be used efficiently and effectively for accelerated growth.--Barry Goldsmith, Managing Partner at Updata Partners
-</p></div>
- 
-</div>
-</section>-->
-<script>
-$(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
- 
-      autoPlay: 5000, //Set AutoPlay to 3 seconds
- 	navigation: true,
- 	stopOnHover : true,
-      items : 1,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
- 
-});
-</script>
-
 <section class="fwork" id="framework">
 	<div style="" class="wrapper-header">
 	     <span class="icon" style="opacity: 1;"><img src="/assets/blueprint.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
-	     <h3>Framework &amp; Methodology:</h3>
+	     <h3>Framework &amp; Methodology</h3>
 	     <div style="clear: both"></div>
 	</div>
 <section class="top-framework">
@@ -99,12 +73,12 @@ $(document).ready(function() {
 </div>
 </section>
 <section class="framework-details">
-	<div class="container-fluid" style="padding-left:30px; padding-right:30px;">
+	<div class="container-fluid" style="text-align:center; padding-left:30px; padding-right:30px;">
 		<h2 style="width:75%; margin-left:auto; margin-right:auto; text-align:center; font-weight:500; margin-top:2em;">We help companies through a unique three-phase framework with a methodology that blends consulting into step-in execution for maximum efficiency and effectiveness.</h2>
 		<div class="row">
 			<div id="left1" class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<h3><span class="phase">Phase 1:</span>
-				<br />Growth Readiness Assessment</h2>
+				<h3 style="text-align:left"><span class="phase">Phase 1:</span>
+				<br />Growth Readiness Assessment</h3>
 				<p class="phase-description">2nd Stage Partners conducts a thorough appraisal of mission-critical business areas in order to assess current capabilities and identify and prioritize areas of focus. </p>
 			</div>
 			<div id="middle1" class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
@@ -122,22 +96,22 @@ $(document).ready(function() {
 				<img class="small-icons" src="/assets/small-icon-2.png" />
 			</div>
 			<div id="right2" class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<h3><span class="phase">Phase 2:</span>
-				<br />Strategic Roadmap</h2>
+				<h3 style="text-align:left"><span class="phase">Phase 2:</span>
+				<br />Strategic Roadmap</h3>
 				<p class="phase-description">No business can focus on everything all at once, so we pinpoint the most capital-efficient priorities in order to quickly increase revenue and synchronize the business. </p>
 			</div>
 		</div>
 		<div class="row">
 			<div id="left3" class="left col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<h3><span class="phase">Phase 3:</span>
-				<br />Execution Services</h2>
+				<h3 style="text-align:left"><span class="phase">Phase 3:</span>
+				<br />Execution Services</h3>
 				<p class="phase-description">2nd Stage Partners offers more than just a plan; we also offer “step-in” services that complement the existing team and accelerate growth. Our experienced executives serve as mentors or coaches to existing staff or can serve as interim members of the executive team by heading up the areas identified as the biggest priorities in Phase 2.</p>
 			</div>
 			<div id="middle3" class="middle col-xs-0 col-sm-2 col-md-2 col-lg-2">
 				<img class="small-icons" src="/assets/small-icon-3.png" />
 			</div>
 			<div id="right3" class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<img class="info-pic" src="https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/3/37/37925/business-o.jpg?1378635142" />
+				<img style="max-width:380px" class="info-pic" src="/assets/graphic-3-maybe.png" />
 			</div>
 		</div>
 	</div>
@@ -279,10 +253,74 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
     </div>
   </div>
 </div>
+<section class="quotes">
+<div style="margin-bottom:0;" class="wrapper-header">
+	     <span class="icon" style="opacity: 1;"><img src="/assets/quote-icon-white.png" width="35" height="35"></span>
+	     <span class="line" style="height: 35px;"></span>
+	     <h3>What People Are Saying</h3>
+	     <div style="clear: both"></div>
+	</div>
+<div id="owl-demo" class="container-fluid owl-carousel owl-theme">
 
+  <div class="item"><hr class="border"><p>Early and 2nd Stage companies have a common problem: they get some money and then they literally can’t use it fast enough to be effective. They waste a lot of time hiring people that don’t work out, reinventing the wheel when it comes to building out various departments. 2nd Stage Partners can come in and tell you where you need to focus, what areas can afford to be ignored for awhile longer, and then they can actually do the work that needs to be done so that capital can be used efficiently and effectively for accelerated growth.
+  <span class="quote-person">Barry Goldsmith, Managing Partner at Updata Partners</span>
+</p><hr class="border"></div>
+  	
+  	<div class="item">
+	  	<hr class="border">
+	  	<p>There are unprecedented efforts underway in both the private and public sector to get companies started, and that’s a great thing. But then what? All too often, these companies find themselves with a lack of resources and expertise relevant to rapid growth. Companies need effective, experienced leadership to help them grow to the second stage. 2nd Stage Partners fills a critical gap in the landscape of business growth in America today.
+	  	<span class="quote-person">Michael Finney, President &amp; Chief Executive Officer, Michigan Economic Development Corporation</span>
+		</p>
+		<hr class="border">
+	</div>
+	<div class="item"><hr class="border">
+		<p>The kinds of skills that make a great startup don’t necessarily translate to and through the second stage. These early-stage companies need the experienced, proven expertise offered by 2nd Stage Partners, not only to identify where they need help, but then to actually step in and execute the strategy, all while mentoring the staff who will be doing it long term.
+		<span class="quote-person">Kenneth Nisbet, Associate Vice President, Tech Transfer at University of Michigan</span>
+		</p>
+		<hr class="border">
+	</div>	
+	<div class="item"><hr class="border">
+		<p>Early-stage and mid-stage  companies have a huge synchronization problem. They may have a great product but no effective sales structure to sell it, or they may have a fantastic sales team but very little marketing, which makes selling inefficient. All too often it takes too long to bring those deficient areas up to speed and for the company to reach it’s potential.  2nd Stage Partners’ proposition--for which I believe there is real need--is to step in and fill the most mission-critical gaps to synchronize company efforts and drive maximum capital efficiency.
+		<span class="quote-person">Noah Walley, Head of Technology Investing at Investor Growth Capital</span>
+		</p>
+		<hr class="border">	 
+	</div>
+	<div class="item"><hr class="border">
+		<p>We see so many companies with fantastic ideas fall short when it comes to rapid, efficient growth.  2nd Stage Partners bring the experience and expertise to not only know what to do, but to actually do it.  Companies that work with 2nd Stage Partners will benefit greatly.
+		<span class="quote-person">Conor Mullett, Managing Director and Co Founder at Red Oak Growth Partners</span>
+		</p>
+		<hr class="border">	 
+	</div>
+	<div class="item"><hr class="border">
+		<p>Accelerating to and through the second stage is the next big problem facing early-stage companies in America, and it’s a problem that receives very little attention and support. The executives of 2nd Stage Partners have done it all, from startups and high-growth companies to mergers and acquisitions, showing again and again that they know how to attain liquidity for shareholders.
+		<span class="quote-person">Paul Krutko, President and Chief Executive Officer, Ann Arbor SPARK; Chair of the International Economic Development Council</span>
+		</p>
+		<hr class="border"> 
+	</div> 
+
+	</div>
+</section>
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      autoPlay: 5000, //Set AutoPlay to 3 seconds
+ 	navigation: false,
+ 	stopOnHover : true,
+      singleItem:true,
+    // Responsive 
+    responsive: true,
+    responsiveRefreshRate : 200,
+    responsiveBaseWidth: window
+ 
+  });
+ 
+});
+</script>
 <section id="team" class="team">
 	<div class="wrapper-header">
-	     <span class="icon" style="opacity: 1;"><img src="http://www.earlybird.com/img/icon-contact@2x.png" width="35" height="35"></span>
+	     <span class="icon" style="opacity: 1;"><img src="/assets/team-icon.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
 	     <h3>Our Team</h3>
 	     <div style="clear: both"></div>
@@ -295,7 +333,11 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed"><img class="img-responsive bio-pic grayscale" src="/assets/larryfreed2.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h5><b style="font-weight:500">Larry Freed</b><br/>Managing Partner</h5>
+				<h5 style="margin:0;"><b style="font-weight:500">Larry Freed</b></h5>
+				<br/>
+				<h5 style="margin:0;">Managing Partner</h5>
+				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
+				<a href="http://www.twitter.com/larryfreed" target="_blank" class="social-media"><i class="fa fa-twitter"></i></a>
 				<p>Larry was the President and CEO of ForeSee, leading the company from inception to successful exit in 2013. He has more than 30 years of executive experience, including serving as CTO at BankOne. He is a widely-recognized speaker and author of two books, and specializes in rapid-growth executive strategies for early- and second-stage companies.
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
@@ -306,7 +348,10 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#johnWilliams"><img class="img-responsive bio-pic grayscale" src="/assets/johnwilliams.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h5><b style="font-weight:500">John Williams</b><br/>General Partner</h5>
+				<h5 style="margin:0"><b style="font-weight:500">John Williams</b></h5>
+				<br/>
+				<h5 style="margin:0">General Partner</h5>
+				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<p>John has more than 30 years of executive experience helping small, medium, and large technology companies accelerate growth and enhance operational efficiency through strategic alignment. John has extensive experience in product strategy and execution, professional services leadership, line-of-business management, definition and execution of go-to-market strategy, R&amp;D, and organizational alignment.
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#johnWilliams">+ Read More</a>
@@ -317,7 +362,10 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#aaronWatson"><img class="img-responsive bio-pic grayscale" src="/assets/aaronwatson.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h5><b style="font-weight:500">Aaron Watson</b><br/>General Partner</h5>
+				<h5 style="margin:0;"><b style="font-weight:500">Aaron Watson</b></h5>
+				<br/>
+				<h5 style="margin:0;">General Partner</h5>
+				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<p>Aaron is a seasoned executive whose career includes a remarkable series of successful exits that yielded substantial returns for equity holders. With nearly 20 years in online business and technology he has held leadership positions in organizations of varied size and maturity, helping all of them substantially increase their levels of success.
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#aaronWatson">+ Read More</a>
@@ -328,7 +376,10 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#cia"><img class="img-responsive bio-pic grayscale" src="/assets/cia.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h5><b style="font-weight:500">Cia McCaffrey</b><br/>General Partner</h5>
+				<h5 style="margin:0;"><b style="font-weight:500">Cia McCaffrey</b></h5>
+				<br/>
+				<h5 style="margin:0;">General Partner</h5>
+				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<p>Cia has more than 25 years of experience in human resources and recruiting as well as organizational development and growth. With experience in both early-stage and mature company environments, Cia specializes in supporting rapid, cost-efficient growth through effective management of the best human capital, including hiring and training.
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#cia">+ Read More</a>
@@ -339,7 +390,10 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#davescott"><img class="img-responsive bio-pic grayscale" src="/assets/davescott.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h5><b style="font-weight:500">David T. Scott</b><br/>Associate</h5>
+				<h5 style="margin:0;"><b style="font-weight:500">David T. Scott</b></h5>
+				<br/>
+				<h5 style="margin:0;">Associate</h5>
+				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<p>David’s 20 years of professional experiences and natural talent for helping growth companies and billion-dollar organizations succeed makes him one of the leading minds in the marketing field. He specializes in lead-generation marketing and business strategies that leverage marketing in the most efficient and cost-effective ways for growth companies. 
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#davescott">+ Read More</a>
@@ -350,7 +404,10 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#sarah"><img class="img-responsive bio-pic grayscale" src="/assets/sarah.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h5><b style="font-weight:500">Sarah Allen-Short</b><br/>Associate</h5>
+				<h5 style="margin:0"><b style="font-weight:500">Sarah Allen-Short</b></h5>
+				<br />
+				<h5 style="margin:0">Associate</h5>
+				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<p>Sarah has more than 15 years of experience creating, overseeing, and implementing strategic marketing and communications plans for private and public organizations of all sizes. She specializes in differentiated marketing and public relations that helps companies cut through the clutter and connect with audiences in meaningful ways.
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#sarah">+ Read More</a>
@@ -361,7 +418,10 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#davescott"><img class="img-responsive bio-pic grayscale" src="/assets/joyce.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h5><b style="font-weight:500">Joyce Hrinya</b><br/>Associate</h5>
+				<h5 style="margin:0;"><b style="font-weight:500">Joyce Hrinya</b></h5>
+				<br/>
+				<h5 style="margin:0;">Associate</h5>
+				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<p>Joyce has 25 years of experience helping companies build their brand. She has held key executive positions in marketing, customer satisfaction and business development. Her knowledge of marketing and strategy has helped many companies achieve significant growth.
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#larryFreed">+ Read More</a>
@@ -375,7 +435,7 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 <section class="news" id="news">
 	
 	<div class="wrapper-header">
-	     <span class="icon" style="opacity: 1;"><img src="http://www.earlybird.com/img/icon-dialog.png" width="35" height="35"></span>
+	     <span class="icon" style="opacity: 1;"><img src="/assets/blog-icon.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
 	     <h3>Blog</h3>
 	     <div style="clear: both"></div>
@@ -385,9 +445,9 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 	<p style="text-transform:uppercase; font-weight:600;">Most Recent Post:</p>
 	    {% for post in site.posts limit:1 %}
 	    	
+	    	<h2 style="margin:0">{{ post.title }}</h2>
 	    	<span>{{ post.date | date_to_string }}</span>
-	    	<h2 style="margin-top:0">{{ post.title }}</h2>
-			<div class="post">
+			<div style="margin-top:15px;" class="post">
 			{{ post.content }}
 			</div>
 	    {% endfor %}
@@ -406,9 +466,9 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
 </script>
 <section id="contact" style="padding-top:2em;" class="top-contact">
     <div class="wrapper-header">
-	     <span class="icon" style="opacity: 1;"><img src="/assets/contact.png" width="35" height="35"></span>
+	     <span class="icon" style="opacity: 1;"><img src="/assets/mail-icon.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
-	     <h3>Get In Touch:</h3>
+	     <h3>Contact</h3>
 	     <div style="clear: both"></div>
 	</div>
          <form id="contactMe" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" method="post" action="#">
@@ -433,10 +493,12 @@ Larry has a B.S. in computer science from the University of Michigan and a M.B.A
          		<textarea required id="message" name="message" placeholder="Enter your message here..."></textarea>
          	</div>
          	<div class="form-group">
-         		<button id="submit-form" type="submit" class="btn btn-primary">Submit</button>
+         		<button id="submit-form" type="submit" class="btn btn-primary">Get In Touch!</button>
          	</div>
          </form>
-         <h3 id="thanks">Thanks for reaching out. We will be in contact shortly!</h3 id="thanks">
+         <div id="thanks">
+         <h3>Thanks for reaching out. We will be in contact shortly!</h3 id="thanks">
+         <img style="margin-left:auto; margin-right:auto; max-width:350px;" src="/assets/paper-airplane.png" class="img-responsive" />
 </section>
 
 <!--<script>
