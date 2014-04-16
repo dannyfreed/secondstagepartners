@@ -2,9 +2,14 @@
 layout: default-standard-not-home
 title: Second Stage Partners
 ---
-
+<style>
+div, ul, li{
+  zoom:1; 
+  overflow:hidden;
+}
+</style>
 <div style="padding-top:52px; padding-bottom:2em" id="home">
-  <ul class="posts">
+  <ul style="zoom:1; overflow:hidden; max-height:10000px;" class="posts">
   	<div style="padding-left:0" class="wrapper-header">
        <span class="icon" style="opacity: 1;"><img src="http://www.earlybird.com/img/icon-dialog.png" width="35" height="35"></span>
        <span class="line" style="height: 35px;"></span>
@@ -12,16 +17,16 @@ title: Second Stage Partners
        <div style="clear: both"></div>
     </div>
     {% for post in site.posts %}
-        <li style="margin-bottom:5em">
+        <li style="zoom:1; overflow:hidden; margin-bottom:5em;">
           <div>
-            <h2 class="cust-title title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="cust-title title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
             <p class="author-news">{{ post.author }}</p> | <p class="meta-news">{{ post.date | date_to_string }}</p>
           </div>
           
           <div class="tags">
             <span class="badge"> {{post.tags}} </span>
           </div>
-          <p>{{ post.excerpt }} <a class="view-post" href="{{ post.url }}">View Post &raquo;</a></p>
+          <p>{{ post.excerpt }} <a class="view-post" href="{{ post.permalink }}">View Post &raquo;</a></p>
 
         </li>
     {% endfor %}

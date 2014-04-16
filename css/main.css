@@ -966,6 +966,7 @@ box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
 /*News section*/
 .posts{
   list-style:none;
+  max-height:512px;
 }
 .news{
   border-bottom: 1px solid rgb(206, 206, 206);

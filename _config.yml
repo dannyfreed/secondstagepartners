@@ -1,3 +1,77 @@
 name: Second Stage Partners
 markdown: redcarpet
 pygments: true
+
+ftp_host: '23.229.141.34'
+ftp_dir: '/public_html'
+ftp_passive: false
+
+# optional
+ftp_port: 21                  # default 21
+ftp_username: 'larryfreed@2ndstagepartners.com'     # default read from stdin
+ftp_password: 'fDOM!2187' # default read from stdin
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://www.2ndstagepartners.com/'
+  relativeLinks: 'http://www.2ndstagepartners.com/links.jsonp'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  media: 'assets'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "published"
+        field:
+          element: "multiselect"
+          label: "Publish"
+          placeholder: "Choose Status"
+          options:
+            - name: "Publish"
+              value: "true"
+            - name: "Unpublish"
+              value: "false"
+      - name: "title"
+        field:
+          element: "text"
+          value: "enter title here"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Enter Date"
+          value: "2014-01-24 16:13:29"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Enter Link"
+          value: "If you want post to simply link to another site/article"
+      - name: "Select category/type of post"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "PR"
+              value: "pr"
+            - name: "Blog Post"
+              value: "blog"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""

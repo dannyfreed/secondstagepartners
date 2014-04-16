@@ -111,7 +111,7 @@ $('.top-framework').waypoint(function() {
 				<img class="small-icons" src="/assets/small-icon-3.png" />
 			</div>
 			<div id="right3" class="right col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<img style="max-width:380px" class="info-pic" src="/assets/graphic-3-maybe.png" />
+				<img style="max-width:380px" class="info-pic" src="/assets/graphic-3.png" />
 			</div>
 		</div>
 	</div>
@@ -363,7 +363,7 @@ $(document).ready(function() {
 				<h5 style="margin:0;"><b style="font-weight:500">Larry Freed</b></h5>
 				<br/>
 				<h5 style="margin:0;">Managing Partner</h5>
-				<a href="#" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
+				<a href="http://www.linkedin.com/in/larryfreed" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<a href="http://www.twitter.com/larryfreed" target="_blank" class="social-media"><i class="fa fa-twitter"></i></a>
 				<p>Larry was the President and CEO of ForeSee, leading the company from inception to successful exit in 2013. He has more than 30 years of executive experience, including serving as CTO at BankOne. He is a widely-recognized speaker and author of two books, and specializes in rapid-growth executive strategies for early- and second-stage companies.
 				</p>
@@ -378,7 +378,7 @@ $(document).ready(function() {
 				<h5 style="margin:0"><b style="font-weight:500">John Williams</b></h5>
 				<br/>
 				<h5 style="margin:0">General Partner</h5>
-				<a href="www.linkedin.com/pub/john-williams/1/27/548" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
+				<a href="http://www.linkedin.com/pub/john-williams/1/27/548" target="_blank" class="social-media"><i class="fa fa-linkedin-square"></i></a>
 				<p>John has more than 30 years of executive experience helping small, medium, and large technology companies accelerate growth and enhance operational efficiency through strategic alignment. John has extensive experience in product strategy and execution, professional services leadership, line-of-business management, definition and execution of go-to-market strategy, R&amp;D, and organizational alignment.
 				</p>
 				<a href="javascript:void(0);" class="md-trigger" data-toggle="modal" data-target="#johnWilliams">+ Read More</a>
@@ -460,26 +460,46 @@ $(document).ready(function() {
 
 
 <section class="news" id="news">
-	
+
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">	
 	<div class="wrapper-header">
 	     <span class="icon" style="opacity: 1;"><img src="/assets/blog-icon.png" width="35" height="35"></span>
 	     <span class="line" style="height: 35px;"></span>
 	     <h3>Blog</h3>
 	     <div style="clear: both"></div>
 	</div>
-	
+
 	<ul class="posts">
 	<p style="text-transform:uppercase; font-weight:600;">Most Recent Post:</p>
-	    {% for post in site.posts limit:1 %}
-	    	
+	    {% for post in site.tags.blog limit:1 %}
 	    	<h2 style="margin:0">{{ post.title }}</h2>
 	    	<span>{{ post.date | date_to_string }}</span>
 			<div style="margin-top:15px;" class="post">
-			{{ post.content }}
+			{{ post.excerpt }}
+			<a href=" {{ post.url }} ">Continue Reading + </a>
 			</div>
 	    {% endfor %}
+	    <br />
 	<a href="news.html">View All Posts &raquo;</a>
   	</ul>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	<div class="wrapper-header">
+	     <span class="icon" style="opacity: 1;"><img src="/assets/blog-icon.png" width="35" height="35"></span>
+	     <span class="line" style="height: 35px;"></span>
+	     <h3>PR</h3>
+	     <div style="clear: both"></div>
+	</div>
+	<ul class="pr">
+		{% for post in site.tags.pr %}
+			<a target="_blank" href=" {{ post.permalink }} "><p style="margin-bottom:15px;">{{ post.title }}</h2></a> | 
+	    	<span>{{ post.date | date_to_string }}</span>
+	    {% endfor %}
+	</ul>
+
+</div>
+
+
   	
 </section>
 <script>
@@ -542,7 +562,7 @@ $(function(){
 
 $(function() {
   $('.error').hide();
-  $("#submit-form").click(function() {
+  $("#contactMe").submit(function() {
      
      //process the form
     var data = {
@@ -555,7 +575,7 @@ $(function() {
 //alert ($name);return false;
 $.ajax({
   type: "POST", //post was causing a 405 error due to subdomain/DNS issues
-  url: "/mailer.php", 
+  url: "/phpmailer.php", 
   data: data,
   success: function() {
     $('#contactMe').hide("medium");
